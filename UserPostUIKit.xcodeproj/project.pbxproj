@@ -15,6 +15,7 @@
 		15231FAA26F6C22000A0F77D /* UserListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15231FA926F6C22000A0F77D /* UserListTableViewController.swift */; };
 		15231FAE26F6C31500A0F77D /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15231FAC26F6C31500A0F77D /* User.swift */; };
 		15231FAF26F6C31500A0F77D /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15231FAD26F6C31500A0F77D /* Post.swift */; };
+		1548A2E026F7BAC4003D1014 /* UserDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1548A2DF26F7BAC4003D1014 /* UserDetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		15231FA926F6C22000A0F77D /* UserListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListTableViewController.swift; sourceTree = "<group>"; };
 		15231FAC26F6C31500A0F77D /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		15231FAD26F6C31500A0F77D /* Post.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		1548A2DF26F7BAC4003D1014 /* UserDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +87,7 @@
 			isa = PBXGroup;
 			children = (
 				15231FA926F6C22000A0F77D /* UserListTableViewController.swift */,
+				1548A2DF26F7BAC4003D1014 /* UserDetailViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -161,6 +164,7 @@
 			files = (
 				15231FAE26F6C31500A0F77D /* User.swift in Sources */,
 				15231FAA26F6C22000A0F77D /* UserListTableViewController.swift in Sources */,
+				1548A2E026F7BAC4003D1014 /* UserDetailViewController.swift in Sources */,
 				15231F9626F6BD6C00A0F77D /* AppDelegate.swift in Sources */,
 				15231F9826F6BD6C00A0F77D /* SceneDelegate.swift in Sources */,
 				15231FAF26F6C31500A0F77D /* Post.swift in Sources */,

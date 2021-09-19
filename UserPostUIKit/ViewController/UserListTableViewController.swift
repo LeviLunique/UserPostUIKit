@@ -21,15 +21,44 @@ class UserListTableViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        debugPrint("viewDidLoad")
     }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
+        debugPrint("viewWillAppear")
+        loadData()
     }
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
+        debugPrint("viewDidAppear")
         
+    }
+    
+    override func didReceiveMemoryWarning(){
+        debugPrint("didReceiveMomoryWarning")
+        
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        super.prepare(for: segue, sender: sender)
+        
+        if segue.identifier == "userDetailSegue" {
+            
+            if let cell = sender as? UITableViewCell,
+               let index = tableView.indexPath(for: cell){
+                
+                let user = users[index.row]
+                
+                if let destination = segue.destination as? UserDetailViewController {
+                    destination.user = user
+                }
+            }
+        }
+    }
+    
+    private func loadData() {
         if let url = URL(string: "\(kBaseURL)/users") {
             let session = URLSession(
                 configuration: URLSessionConfiguration.default,
