@@ -9,21 +9,25 @@
 /* Begin PBXBuildFile section */
 		15231F9626F6BD6C00A0F77D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15231F9526F6BD6C00A0F77D /* AppDelegate.swift */; };
 		15231F9826F6BD6C00A0F77D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15231F9726F6BD6C00A0F77D /* SceneDelegate.swift */; };
-		15231F9A26F6BD6C00A0F77D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15231F9926F6BD6C00A0F77D /* ViewController.swift */; };
 		15231F9D26F6BD6C00A0F77D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 15231F9B26F6BD6C00A0F77D /* Main.storyboard */; };
 		15231F9F26F6BD6D00A0F77D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 15231F9E26F6BD6D00A0F77D /* Assets.xcassets */; };
 		15231FA226F6BD6D00A0F77D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 15231FA026F6BD6D00A0F77D /* LaunchScreen.storyboard */; };
+		15231FAA26F6C22000A0F77D /* UserListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15231FA926F6C22000A0F77D /* UserListTableViewController.swift */; };
+		15231FAE26F6C31500A0F77D /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15231FAC26F6C31500A0F77D /* User.swift */; };
+		15231FAF26F6C31500A0F77D /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15231FAD26F6C31500A0F77D /* Post.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		15231F9226F6BD6C00A0F77D /* UserPostUIKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UserPostUIKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		15231F9526F6BD6C00A0F77D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		15231F9726F6BD6C00A0F77D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		15231F9926F6BD6C00A0F77D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		15231F9C26F6BD6C00A0F77D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		15231F9E26F6BD6D00A0F77D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		15231FA126F6BD6D00A0F77D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		15231FA326F6BD6D00A0F77D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		15231FA926F6C22000A0F77D /* UserListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListTableViewController.swift; sourceTree = "<group>"; };
+		15231FAC26F6C31500A0F77D /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		15231FAD26F6C31500A0F77D /* Post.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +60,33 @@
 		15231F9426F6BD6C00A0F77D /* UserPostUIKit */ = {
 			isa = PBXGroup;
 			children = (
+				15231FB026F6C3D400A0F77D /* ViewController */,
+				15231FAB26F6C31500A0F77D /* Model */,
 				15231F9526F6BD6C00A0F77D /* AppDelegate.swift */,
 				15231F9726F6BD6C00A0F77D /* SceneDelegate.swift */,
-				15231F9926F6BD6C00A0F77D /* ViewController.swift */,
 				15231F9B26F6BD6C00A0F77D /* Main.storyboard */,
 				15231F9E26F6BD6D00A0F77D /* Assets.xcassets */,
 				15231FA026F6BD6D00A0F77D /* LaunchScreen.storyboard */,
 				15231FA326F6BD6D00A0F77D /* Info.plist */,
 			);
 			path = UserPostUIKit;
+			sourceTree = "<group>";
+		};
+		15231FAB26F6C31500A0F77D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				15231FAC26F6C31500A0F77D /* User.swift */,
+				15231FAD26F6C31500A0F77D /* Post.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		15231FB026F6C3D400A0F77D /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				15231FA926F6C22000A0F77D /* UserListTableViewController.swift */,
+			);
+			path = ViewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,9 +159,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				15231F9A26F6BD6C00A0F77D /* ViewController.swift in Sources */,
+				15231FAE26F6C31500A0F77D /* User.swift in Sources */,
+				15231FAA26F6C22000A0F77D /* UserListTableViewController.swift in Sources */,
 				15231F9626F6BD6C00A0F77D /* AppDelegate.swift in Sources */,
 				15231F9826F6BD6C00A0F77D /* SceneDelegate.swift in Sources */,
+				15231FAF26F6C31500A0F77D /* Post.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
